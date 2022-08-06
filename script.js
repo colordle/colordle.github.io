@@ -12,11 +12,17 @@ var g = Math.floor(Math.random() * 256);
 var b = Math.floor(Math.random() * 256);
 
 color.style.backgroundColor = 'rgb(' + r + ',' + g  + ',' + b + ')'
-reponse = document.getElementById('reponse')
 
 
+console.log(color.style.backgroundColor)
 
 function higher_lower(a,b){
+    if(0 < a-b && a-b< 4){
+        return "↑🔥"
+    }
+    if( 0 < b-a && b-a < 4){
+        return "↓🔥"
+    }
     if (a<b){
         return "↓"
     }if(a>b){
