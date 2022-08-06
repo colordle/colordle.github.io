@@ -1,0 +1,106 @@
+@font-face {
+    font-family: Product;
+    src: url(assets/fonts/Product\ Sans\ Regular.ttf);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: rgb(34, 34, 34);
+    color: white;
+    
+}
+
+h1 p{
+    display: inline;
+}
+
+body, a, button, input{
+    font-family: Product;
+}
+
+button{
+    color: white;
+    border: 3px solid white;
+    background-color: rgb(34, 34, 34);
+}
+
+#color{
+    border: solid white 10px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+#color{
+    width: 200px;
+    height: 200px;
+}
+
+#lignes{
+    display: inline-block;
+    margin-left: 75px;
+}
+
+.repondre{
+    margin-top: 20px;
+    display: flex;
+}
+
+#labelr,#labelg,#labelb{
+    font-size: 2em;
+    display: inline;
+    margin-right: 80px;
+    
+}
+
+#labelr, #pr{
+    color:red
+}
+
+#labelg, #pg{
+    color: green;
+}
+
+#labelb, #pb{
+    color:blue;
+}
+
+
+#labels{
+    display: flex;
+}
+
+#alertbox{
+    color: red;
+}
+
+.repondre input{
+    text-align: center;
+    width: 60px;
+    margin-right: 20px;
+    font-size: 1.5em;
+    color: white;
+    border: 3px solid white;
+    background-color: rgb(34, 34, 34);
+}
+
+.higher_lower{
+    margin-right: 10px;
+    font-size: 1.3em;
+}
+
+@keyframes shake{
+    0%{
+        transform: translateX(0%)
+    }
+    33%{
+        transform: translateX(-1%)
+    }
+    66%{
+        transform:translateX(1%)
+    }
+    100%{
+        transform: translateX(0%)
+    }
+}
