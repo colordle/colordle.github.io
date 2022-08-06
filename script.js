@@ -13,7 +13,6 @@ var b = Math.floor(Math.random() * 256);
 
 color.style.backgroundColor = 'rgb(' + r + ',' + g  + ',' + b + ')'
 reponse = document.getElementById('reponse')
-reponse.textContent = color.style.backgroundColor
 
 
 
@@ -35,6 +34,8 @@ function verifier(){
     g_a = parseInt(document.getElementById("g"+ nb_ligne).value)
     b_a = parseInt(document.getElementById("b"+ nb_ligne).value)
 
+    
+
     if(r_a > 255 | g_a > 255 | b_a > 255){
         alertbox.textContent = 'The maximum number is 255 !'
         body.style.animation = 'shake 0.5s ease'
@@ -45,6 +46,7 @@ function verifier(){
         body.style.animation = None
     }
     else{
+        document.getElementById("c"+nb_ligne).style.backgroundColor = 'rgb(' + r_a + ',' + g_a  + ',' + b_a + ')'
         event.target.remove()
         document.getElementById('hl_r'+ nb_ligne).textContent = higher_lower(r,r_a)
         document.getElementById('hl_g'+ nb_ligne).textContent = higher_lower(g,g_a)
@@ -98,7 +100,11 @@ function creer_ligne(){
         div.classList.add("repondre")
         document.getElementById('lignes').appendChild(div)
 
-        
+        c = document.createElement('div')
+        c.id = "c" + nb_ligne
+        c.classList.add("c")
+
+        div.appendChild(c)
 
         hl_r = document.createElement('p')
         hl_r.id = 'hl_r'+ nb_ligne

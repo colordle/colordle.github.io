@@ -39,12 +39,19 @@ button{
 
 #lignes{
     display: inline-block;
-    margin-left: 75px;
+   
 }
 
 .repondre{
     margin-top: 20px;
     display: flex;
+}
+
+.c{
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(34, 34, 34);
 }
 
 #labelr,#labelg,#labelb{
@@ -67,8 +74,8 @@ button{
 }
 
 
-#labels{
-    display: flex;
+.labels{
+    margin-left: 60px;
 }
 
 #alertbox{
